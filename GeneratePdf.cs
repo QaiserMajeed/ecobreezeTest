@@ -23,7 +23,7 @@ namespace RainstormTech.Puppeteer_Pdf
         [FunctionName("version")]
         public IActionResult Version([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req, ILogger log)
         {
-            return new OkObjectResult(Assembly.GetExecutingAssembly().GetName().Version.ToString());
+            return new OkObjectResult("string");
         }
 
         /// <summary>
